@@ -15,6 +15,8 @@
 		54E547232184584600EC5CCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E547222184584600EC5CCE /* main.m */; };
 		54E5472D2184584600EC5CCE /* TestScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E5472C2184584600EC5CCE /* TestScrollViewTests.m */; };
 		54E547382184584600EC5CCE /* TestScrollViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E547372184584600EC5CCE /* TestScrollViewUITests.m */; };
+		54E547472184725500EC5CCE /* InterScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E547462184725500EC5CCE /* InterScrollView.m */; };
+		54E5474D218473D900EC5CCE /* OuterScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E5474C218473D900EC5CCE /* OuterScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		54E547332184584600EC5CCE /* TestScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E547372184584600EC5CCE /* TestScrollViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestScrollViewUITests.m; sourceTree = "<group>"; };
 		54E547392184584600EC5CCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54E547452184725500EC5CCE /* InterScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterScrollView.h; sourceTree = "<group>"; };
+		54E547462184725500EC5CCE /* InterScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterScrollView.m; sourceTree = "<group>"; };
+		54E5474B218473D900EC5CCE /* OuterScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OuterScrollView.h; sourceTree = "<group>"; };
+		54E5474C218473D900EC5CCE /* OuterScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OuterScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				54E547142184584400EC5CCE /* AppDelegate.m */,
 				54E547162184584400EC5CCE /* ViewController.h */,
 				54E547172184584400EC5CCE /* ViewController.m */,
+				54E547452184725500EC5CCE /* InterScrollView.h */,
+				54E547462184725500EC5CCE /* InterScrollView.m */,
+				54E5474B218473D900EC5CCE /* OuterScrollView.h */,
+				54E5474C218473D900EC5CCE /* OuterScrollView.m */,
 				54E547192184584400EC5CCE /* Main.storyboard */,
 				54E5471C2184584600EC5CCE /* Assets.xcassets */,
 				54E5471E2184584600EC5CCE /* LaunchScreen.storyboard */,
@@ -262,8 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E547472184725500EC5CCE /* InterScrollView.m in Sources */,
 				54E547182184584400EC5CCE /* ViewController.m in Sources */,
 				54E547232184584600EC5CCE /* main.m in Sources */,
+				54E5474D218473D900EC5CCE /* OuterScrollView.m in Sources */,
 				54E547152184584400EC5CCE /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +450,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49VYEW5CMM;
 				INFOPLIST_FILE = TestScrollView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +468,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49VYEW5CMM;
 				INFOPLIST_FILE = TestScrollView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
